@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* miama fonts */
+/* Shape fonts */
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cedarville+Cursive&family=Inter:wght@100..900&family=Style+Script&family=Tangerine:wght@400;700&display=swap');
 
 *{
@@ -48,6 +48,9 @@ header{
 }
 
 /* nav styles */
+.fa-solid{
+    display: none;
+}
 
 .navlinks{
     display: flex;
@@ -78,6 +81,7 @@ header{
     border: .1px solid rgb(49, 49, 49);
     border-radius: 20px;
     padding: 4px 18px;
+    cursor: pointer;
 }
 
 .nav-items{
@@ -99,6 +103,7 @@ header{
     width: 590px;
     margin-top: -40px;
 }
+
 .header-two{
     width: 340px;
     position: relative;
@@ -178,8 +183,6 @@ header{
 .card1-description{
     position: absolute;
     margin-top: 50px;
-}
-.card-content{
 }
 
 /* habit section styles */
@@ -265,7 +268,9 @@ header{
 
 .bmi-description{
     text-align: left;
+    font-size: 14px;
     margin: -35px 20% 50px 37%;
+    opacity: 50%;
 }
 
 
@@ -351,6 +356,7 @@ table{
 .meet-description{
     color: #FFFFFF;
     opacity: 50%;
+    font-size: 14px;
     margin: -25px 15% 60px 15%;
 }
 
@@ -421,6 +427,7 @@ footer{
 
 .footer-items > li{
     list-style: none;
+    opacity: 50%;
     margin-bottom: 12px;
 }
 
@@ -432,6 +439,7 @@ footer{
 
 .footer-description{
     opacity: 50%;
+    font-size: 14px;
     margin-top: -30px;
 }
 
@@ -450,4 +458,497 @@ footer{
     top: 400px;
     left: 550px;
     text-align: center;
+}
+
+
+
+
+
+
+/* small devices styles */
+
+@media screen and (max-width: 425px) {
+
+    /* shared styles */
+    .hero-btn-one {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .hero-btn-two {
+        font-size: 1rem;
+        padding: 12px 20px;
+        margin-left: 10px;
+    }
+
+    .common-title {
+        font-size: 2rem;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* shared styles ends */
+
+    .fa-solid {
+        display: block;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+
+    .navlinks {
+        margin: 0 10%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    /* heder section styles */
+
+    .hero-banner {
+        flex-direction: column;
+        margin: -30px 10%;
+    }
+
+    .header-section {
+        margin: 0 20%;
+    }
+
+    .header-one {
+        width: 100%;
+        margin: 80px 10%;
+    }
+
+    .header-two {
+        width: 100%;
+        margin-top: -20%;
+        position: relative;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .shape {
+        font-size: 5rem;
+    }
+
+    .card-one {
+        top: 60px;
+        left: 190px;
+        width: 150px;
+        height: 80px;
+        padding: 5px 0 5px 20px;
+    }
+
+    .card-two {
+        top: 250px;
+        left: -5px;
+        gap: 10px;
+        padding: 0 0;
+    }
+
+    /* habit section styles */
+    .habit-title {
+        margin-top: -100px;
+    }
+
+    .habit-description {
+        padding: 0 2%;
+        margin-top: -10px;
+        margin-bottom: 60px;
+    }
+
+    .habit-box-description {
+        padding: 0 20%;
+    }
+
+    .habit-contents {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    /* run section styles */
+
+    .run-section {
+        flex-direction: column;
+        height: 540px;
+        padding: 33px;
+        margin: -60px 5% 0 5%;
+        text-align: left;
+    }
+
+    .run-description{
+        padding-top: 30px;
+        line-height: 25px;
+    }
+
+    .run-img,
+    .run-content {
+        width: 100%;
+    }
+
+    .habit-button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* BMI Calculator section styles */
+    .bmi-section {
+        text-align: left;
+    }
+
+    table{
+        width: 100%;
+    }
+    .calculator-title, .form-title{
+        font-size: 1.5rem;
+    }
+
+    .form-title{
+        margin-top: 50px;
+    }
+
+    .form-description{
+        margin: -8px 8% 20px 0;
+    }
+
+    .form-btn{
+        width: 100%;
+    }
+
+    .bmi-description, .bmi-title{
+        text-align: left;
+        margin: 0 5%;
+        padding: 0 15px 30px 15px;
+    }
+
+    .bmi-contents{
+        flex-direction: column;
+    }
+
+    .bmi-form, .bmi-calculator{
+        width: 100%;
+    }
+
+    .bmi-calculator{
+        margin-right: 0;
+    }
+
+    .input-one > input{
+        
+        width: 90%;
+    }
+
+    /* <!-- Meet Our Team section style --> */
+    .meet-section{
+        margin: 0 5% 100px 5%;
+    }
+
+    .meet-description{
+        margin: -25px 5% 60px 5%;
+    }
+    
+    .meet-img-section{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px 0px;
+    }
+
+    .img-div {
+        width: 90%;
+    }
+
+    .trainer-name, .trainer-qualification{
+        top: 210px;
+        left: 20px;
+    }
+    
+    .trainer-qualification{
+        top: 240px;
+    }
+    /* footer styles */
+    footer{
+        height: 850px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        justify-content: left;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .footer-content{
+        width: 80%;
+    }
+
+    .footer-services{
+        width: 100%;
+        text-align: left;
+    }
+
+    .hr-line{
+        top: 750px;
+        left: 30px;
+        opacity: 40%;
+        width: 85%;
+    }
+    
+    .copyrite{
+        top: 760px;
+        left: 80px;
+    }
+
+}
+
+/* samll device styles */
+@media screen and (min-width: 426px) and (max-width: 576px) {
+
+    /* shared styles */
+    .hero-btn-one {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .hero-btn-two {
+        font-size: 1rem;
+        padding: 12px 20px;
+        margin-left: 10px;
+    }
+
+    .common-title {
+        font-size: 2rem;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* shared styles ends */
+
+    .fa-solid {
+        display: block;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+
+    .navlinks {
+        margin: 0 10%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    /* heder section styles */
+
+    .hero-banner {
+        flex-direction: column;
+        margin: -30px 10%;
+    }
+
+    .header-section {
+        margin: 0 20%;
+    }
+
+    .header-one {
+        width: 100%;
+        margin: 80px 10%;
+    }
+
+    .header-two {
+        width: 100%;
+        margin-top: -20%;
+        position: relative;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .shape {
+        font-size: 5rem;
+    }
+
+    .card-one {
+        top: 80px;
+        left: 260px;
+    }
+
+    .card-two {
+        top: 360px;
+        left: 10px;
+        gap: 10px;
+        padding: 0 0;
+    }
+
+    /* habit section styles */
+    .habit-title {
+        margin-top: -100px;
+    }
+
+    .habit-description {
+        padding: 0 2%;
+        margin-top: -10px;
+        margin-bottom: 60px;
+    }
+
+    .habit-box-description {
+        padding: 0 20%;
+    }
+
+    .habit-contents {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    /* run section styles */
+
+    .run-section {
+        flex-direction: column;
+        height: 680px;
+        padding: 20px 5px;
+        margin: -60px 5% 0 5%;
+        text-align: left;
+    }
+
+    .run-content {
+        width: 90%;
+    }
+
+    .run-img{
+        width: 80%;
+    }
+
+    .run-description{
+        padding-right: 60px;
+        margin-left: 5%;
+        line-height: 25px;
+    }
+    
+    .run-title{
+        font-size: 3rem;
+        margin: 10px 8% 50px 5%;
+    }
+
+    .habit-button {
+        margin: 5px 0 0 5%;
+        width: 90%;
+    }
+
+    /* BMI Calculator section styles */
+    .bmi-section {
+        text-align: left;
+    }
+
+    table{
+        width: 100%;
+    }
+    .calculator-title, .form-title{
+        font-size: 1.5rem;
+    }
+
+    .form-title{
+        margin-top: 50px;
+    }
+
+    .form-description{
+        margin: -8px 8% 20px 0;
+    }
+
+    .form-btn{
+        width: 100%;
+    }
+
+    .bmi-description, .bmi-title{
+        text-align: left;
+        margin: 0 5%;
+        padding: 0 15px 30px 15px;
+    }
+
+    .bmi-contents{
+        flex-direction: column;
+    }
+
+    .bmi-form, .bmi-calculator{
+        width: 100%;
+    }
+
+    .bmi-calculator{
+        margin-right: 0;
+    }
+
+    .input-one > input{
+        width: 92%;
+    }
+
+    /* <!-- Meet Our Team section style --> */
+    .meet-section{
+        margin: 80px 5%;
+    }
+
+    .meet-description{
+        margin: -25px 5% 60px 5%;
+    }
+    
+    .meet-img-section{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .img-div{
+        width: 100%;
+    }
+
+    .trainer-name, .trainer-qualification{
+        top: 310px;
+        left: 20px;
+    }
+    
+    .trainer-qualification{
+        top: 340px;
+        opacity: 60%;
+    }
+    /* footer styles */
+    footer{
+        height: 850px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        justify-content: left;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .footer-content{
+        width: 90%;
+    }
+
+    .footer-description{
+        margin-right: 180px;
+    }
+
+    .footer-services{
+        width: 100%;
+        text-align: left;
+    }
+
+    .hr-line{
+        top: 750px;
+        left: 30px;
+        opacity: 40%;
+        width: 85%;
+    }
+    
+    .copyrite{
+        top: 760px;
+        left: 150px;
+    }
 }

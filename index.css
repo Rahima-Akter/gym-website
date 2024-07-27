@@ -1,0 +1,453 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* miama fonts */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cedarville+Cursive&family=Inter:wght@100..900&family=Style+Script&family=Tangerine:wght@400;700&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    max-width: 1440px;
+    background-color: black;
+}
+
+/* shared styles */
+
+.hero-btn-one{
+    color: #FFFFFF;
+    background-color: #E6533C;
+    border-radius: 42px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 22px;
+}
+
+.hero-btn-two{
+    color: #FFFFFF;
+    background-color: transparent;
+    border-radius: 42px;
+    border: 1px solid #b3b1b1;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 22px;
+    margin-left: 10px;
+}
+
+.common-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+header{
+    background: linear-gradient(rgba(27, 27, 27, 100%), rgba(27, 27, 27, 50%), rgba(27, 27, 27, 100%));
+}
+
+/* nav styles */
+
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 13%;
+}
+
+.logo{
+    color: #E6533C;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.home{
+    background-color: #E6533C;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 18px;
+    margin-left: -15px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: .1px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    padding: 4px 18px;
+}
+
+.nav-items{
+    list-style: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+/* heder section styles */
+
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-one{
+    width: 590px;
+    margin-top: -40px;
+}
+.header-two{
+    width: 340px;
+    position: relative;
+}
+
+.header-section img{
+    width: 100%;
+}
+
+.hero-title{
+    font-size: 4.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 70px;
+    margin-top: -20px;
+}
+
+.hero-description{
+    margin: -20px 0 25px 0;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.shape{
+    font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-size: 9rem;
+}
+
+.header-card{
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: rgba(48, 48, 48, 0.54);
+}
+
+.card-one{
+    color: #FFFFFF;
+    top: 120px;
+    left: 200px;
+    padding: 5px 0 5px 20px;
+}
+
+.card-two{
+    color: #FFFFFF;
+    top: 420px;
+    left: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0;
+}
+
+.icon{
+    margin-left: -100px;
+}
+
+.card-title, .card1-title{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -28px;
+}
+
+.card1-title{
+    margin-top: 15px;
+}
+
+.card-description{
+    position: absolute;
+    margin-top: 5px;
+}
+
+.card1-description{
+    position: absolute;
+    margin-top: 50px;
+}
+.card-content{
+}
+
+/* habit section styles */
+
+.habit-section{
+    margin: 100px 12% 70px 12%;
+    text-align: center;
+}
+
+.habit-description{
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 0 20%;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    opacity: 50%;
+}
+
+.habit-contents{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.habit-box img{
+    border-radius: 50%;
+}
+
+.habit-box-description{
+    margin-top: -18px;
+}
+
+.habit-box-title{
+    font-size: 1.10rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* run section styles */
+
+.run-section{
+    display: flex;
+    height: 290px;
+    margin: 0 12%;
+    padding: 20px 70px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+.run-img {
+    width: 30%;
+}
+.run-img img{
+    width: 100%;
+}
+
+.run-title{
+    margin-top: -8px;
+}
+
+.run-content{
+    width: 40%;
+}
+
+.run-description{
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: -40px;
+    padding: 10px 0;
+    opacity: 50%;
+}
+
+/* BMI Calculator section styles */
+
+.bmi-section{
+    color: white;
+    text-align: center;
+    margin: 80px 0;
+
+}
+
+.bmi-description{
+    text-align: left;
+    margin: -35px 20% 50px 37%;
+}
+
+
+.bmi-contents{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px;
+    background-color: #222222;
+}
+
+.bmi-calculator{
+    margin-right: 100px;
+}
+
+.calculator-title, .form-title{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-description{
+    font-size: 14px;
+    opacity: 50%;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.bmi-form{
+    width: 40%;
+}
+
+.input-one > input , .input-two > input, select{
+    border: none;
+    border-radius: 10px;
+    background-color: #363636;
+    font-weight: 600;
+    padding: 10px;
+    color: #838282;
+}
+
+.input-one{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.input-two > select{
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #333333;
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+td{
+    color: #838282;
+    font-size: 14px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.form-btn{
+    padding: 12px 60px;
+    margin-top: 15px;
+    float: left;
+}
+
+/* <!-- Meet Our Team section style --> */
+
+.meet-section{
+    text-align: center;
+    margin: 80px 12%;
+}
+
+.meet-description{
+    color: #FFFFFF;
+    opacity: 50%;
+    margin: -25px 15% 60px 15%;
+}
+
+
+.meet-img-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    gap: 15px;
+    padding: 15px;
+    justify-items: center;
+    background-color: #222222;
+}
+
+.meet-img-section img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-div{
+    position: relative;
+}
+
+.trainer-name, .trainer-qualification{
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+.trainer-qualification{
+    top: 210px;
+    font-size: 14px;
+    opacity: 50%;
+}
+
+/* footer styles */
+
+footer{
+    background-color: #222222;
+    height: 470px;
+    position: relative;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 100px;
+    padding-top: 80px;
+}
+
+.footer-content{
+    width: 440px;
+}
+
+.footer-services{
+    width: 200px;
+    text-align: center;
+}
+
+.footer-title{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.footer-items > li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer-logo{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #E6533C;
+}
+
+.footer-description{
+    opacity: 50%;
+    margin-top: -30px;
+}
+
+.hr-line{
+    position: absolute;
+    top: 380px;
+    left: 140px;
+    opacity: 40%;
+    width: 80%;
+}
+
+.copyrite{
+    position: absolute;
+    color: #FFFFFF;
+    opacity: 50%;
+    top: 400px;
+    left: 550px;
+    text-align: center;
+}

@@ -259,7 +259,7 @@ header {
     opacity: 50%;
 }
 
-/* rainings and Exercises styles */
+/* trainings and Exercises styles */
 
 .excercise-section {
     margin: 100px 12%;
@@ -313,7 +313,7 @@ header {
     width: 100%;
     height: 100%;
     background: #06FFD2;
-    opacity: 50%;
+    opacity: 40%;
     top: 0;
     left: 0;
     position: absolute;
@@ -327,7 +327,7 @@ header {
     width: 100%;
     height: 100%;
     background: #222222;
-    opacity: 50%;
+    opacity: 40%;
     top: 0;
     left: 0;
     position: absolute;
@@ -550,10 +550,6 @@ footer {
 }
 
 
-
-
-
-
 /* small devices styles */
 
 @media screen and (max-width: 425px) {
@@ -684,6 +680,37 @@ footer {
     .habit-button {
         width: 100%;
         margin-bottom: 20px;
+    }
+/* Trainings and Exercises section style */
+
+    .overlay-three,
+    .overlay-six,
+    .img-3,
+    .img-6 {
+        display: none;
+    } 
+
+    .img-description {
+        top: 50px;
+        left: 20px;
+        padding-right: 30px;
+    }
+
+    .excercise-section {
+        margin: 80px 5%;
+    }
+
+    .ImgBox-one,
+    .ImgBox-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .excercise-title{
+        margin-right: 30%;
+    }
+    .excercise-description {
+        margin: -20px 30% 40px 0;
     }
 
 
@@ -936,6 +963,34 @@ footer {
     .habit-button {
         margin: 5px 0 0 5%;
         width: 90%;
+    }
+
+    /* Trainings and Exercises section styles */
+    .overlay-three,
+    .overlay-six,
+    .img-3,
+    .img-6 {
+        display: none;
+    } 
+
+    .img-description {
+        top: 100px;
+        left: 20px;
+        padding-right: 30px;
+    }
+
+    .excercise-section {
+        margin: 80px 5%;
+    }
+
+    .ImgBox-one,
+    .ImgBox-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .excercise-description {
+        margin: -20px 30% 45px 0;
     }
 
     /* BMI Calculator section styles */

@@ -323,7 +323,8 @@ header {
     background: #E6533C;
 }
 
-.overlay-three, .overlay-four {
+.overlay-three,
+.overlay-four {
     width: 100%;
     height: 100%;
     background: #222222;
@@ -356,7 +357,6 @@ header {
     margin: -35px 20% 50px 37%;
     opacity: 50%;
 }
-
 
 .bmi-contents {
     color: white;
@@ -480,7 +480,7 @@ table {
 .trainer-qualification {
     top: 210px;
     font-size: 14px;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 /* footer styles */
@@ -681,14 +681,15 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
-/* Trainings and Exercises section style */
+
+    /* Trainings and Exercises section style */
 
     .overlay-three,
     .overlay-six,
     .img-3,
     .img-6 {
         display: none;
-    } 
+    }
 
     .img-description {
         top: 50px;
@@ -706,9 +707,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .excercise-title{
+    .excercise-title {
         margin-right: 30%;
     }
+
     .excercise-description {
         margin: -20px 30% 40px 0;
     }
@@ -971,7 +973,7 @@ footer {
     .img-3,
     .img-6 {
         display: none;
-    } 
+    }
 
     .img-description {
         top: 100px;
@@ -1108,4 +1110,190 @@ footer {
         top: 760px;
         left: 150px;
     }
+}
+
+/* styles for medium devices */
+@media screen and (min-width:577px) and (max-width: 992px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .navlinks {
+        margin: 0 8%;
+    }
+
+    /* heder section styles */
+
+    .hero-banner {
+        flex-direction: column;
+        margin: 100px 15%;
+    }
+
+    .header-one {
+        width: 100%;
+    }
+
+    .header-two {
+        width: 50%;
+        position: relative;
+    }
+
+    .hero-description {
+        margin: -20px 20% 25px 0;
+        line-height: 30px;
+    }
+
+    .card-one {
+        top: 12%;
+        left: 65%;
+    }
+
+    .card-two {
+        top: 50%;
+        left: 1%;
+    }
+
+    /* habit section styles */
+
+    .habit-section {
+        margin: 100px 15% 70px 15%;
+    }
+
+    .habit-description {
+        margin-bottom: 60px;
+    }
+
+    .habit-contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    /* run section styles */
+    .run-section {
+        display: flex;
+        height: 320px;
+        margin: 0 5%;
+        padding: 20px 70px;
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    .run-img {
+        width: 45%;
+    }
+
+    /* trainings and Exercises styles */
+
+    .excercise-section {
+        margin: 100px 5%;
+    }
+
+    .ImgBox-one,
+    .ImgBox-two {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-description {
+        top: 60%;
+        left: 8%;
+    }
+
+    /* bmi section style */
+    .bmi-contents {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bmi-calculator {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .bmi-description {
+        margin: -35px 50% 50px 5%;
+    }
+
+    .bmi-title {
+        margin-left: 5%;
+    }
+
+    .bmi-section {
+        text-align: left;
+        margin: 80px 0;
+
+    }
+
+    .bmi-form {
+        width: 100%;
+    }
+
+    .input-one {
+        gap: 15px;
+    }
+
+    .input-two>select {
+        margin-top: 15px;
+    }
+
+    .form-btn {
+        margin-top: 25px;
+    }
+
+    /* <!-- Meet Our Team section style --> */
+
+    .meet-section {
+        margin: 80px 5%;
+    }
+
+    .trainer-name {
+        top: 65%;
+    }
+
+    .trainer-qualification {
+        top: 78%;
+    }
+
+    /* footer styles */
+
+    footer {
+        height: 840px;
+    }
+
+    .footer-logo {
+        margin-top: -20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .footer-description {
+        margin-right: 60%;
+    }
+
+    .footer-services {
+        width: 100%;
+        text-align: left;
+    }
+
+    .hr-line {
+        top: 740px;
+        left: 0;
+        width: 100%;
+    }
+
+    .copyrite {
+        top: 760px;
+        left: 360px;
+    }
+
 }
